@@ -35,7 +35,7 @@ const UpdateJob = () => {
     const onSubmit = (data) => {
       data.skills = selectedOption;
       // console.log(data);
-      fetch(`http://localhost:5000/update-job/${id}`, {
+      fetch(`https://mern-job-portal-backend.onrender.com/update-job/${id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
