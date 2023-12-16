@@ -13,7 +13,7 @@ const MyJobs = () => {
 
   useEffect(() => {
     setIsloading(true);
-    fetch(`http://localhost:5000/myjobs/${email}`)
+    fetch(`https://mern-job-portal-backend.onrender.com/myjobs/${email}`)
       .then((res) => res.json())
       .then((data) => {
         setJobs(data);
@@ -51,7 +51,7 @@ const MyJobs = () => {
 
   const handleDelete = (id) => {
     // console.log(id);
-    fetch(`http://localhost:5000/job/${id}`, {
+    fetch(`https://mern-job-portal-backend.onrender.com/job/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json)
