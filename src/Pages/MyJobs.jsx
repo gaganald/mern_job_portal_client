@@ -6,6 +6,7 @@ const MyJobs = () => {
   const [jobs, setJobs] = useState([]);
   const [searchText, setSearchText] = useState("");
   const [isloading, setIsloading] = useState(true);
+  const [faltu, setFaltu] = useState("");
 
   // set current page
   const [currentPage, setCurrentPage] = useState(1);
@@ -54,10 +55,11 @@ const MyJobs = () => {
     fetch(`https://mern-job-portal-backend.onrender.com/job/${id}`, {
       method: "DELETE",
     })
-      .then((res) => res.json)
+      .then((res) => res.json())
       .then((data) => {
-        if (data.acknowledge === true) {
+        if (data.acknowledged === true) {
           alert("Job Deleted Successfully!");
+          setFaltu("Deleted");
         }
        
       });
