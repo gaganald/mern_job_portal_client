@@ -12,10 +12,10 @@ const Location = ({handleChange}) => {
                 <span className='checkmark'></span>All
             </label>
 
-            <InputField handleChange={handleChange} value="london" title="London" name="text" />
-            <InputField handleChange={handleChange} value="seatle" title="Seatle" name="text" />
-            <InputField handleChange={handleChange} value="madrid" title="Madrid" name="text" />
-            <InputField handleChange={handleChange} value="boston" title="Boston" name="text" />
+            <InputField handleChange={handleChange} value="Bangalore" title="Bangalore" name="text" />
+            <InputField handleChange={handleChange} value="Hyderabad" title="Hyderabad" name="text" />
+            <InputField handleChange={handleChange} value="Gurugram" title="Gurugram" name="text" />
+            <InputField handleChange={handleChange} value="Noida" title="Noida" name="text" />
 
         </div>
 
